@@ -1,0 +1,18 @@
+   public ArrayList<ArrayList<Integer>> separateChaining(int arr[], int n, int hashSize)
+    {
+        //Your code here
+        ArrayList<ArrayList<Integer>> st=new ArrayList<ArrayList<Integer>>();
+        for(int j=0;j<=hashSize;j++){
+            st.add(new ArrayList<>());
+        }
+        for(int i=0;i<n;i++){
+            int res=arr[i]%hashSize;
+            st.get(res).add(arr[i]);
+        }
+        return st;
+        
+    }
+}
+
+
+// insertion in chainning in hashing
