@@ -2,4 +2,9 @@ HashSet<Integer> s=new HashSet<Integer>();
 for(int i=0;i<arr.length;i++){
 s.add(arr[i]);
 }
-return s;
+return s.size();
+
+
+
+
+//HashSet<Integer> s=new HashSet<>(Arrays.asList(arr));
